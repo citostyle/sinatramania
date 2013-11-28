@@ -1,4 +1,4 @@
-package com.sinatramania.apitest;
+package com.sinatramania.domain;
 
 public class Todo {
 

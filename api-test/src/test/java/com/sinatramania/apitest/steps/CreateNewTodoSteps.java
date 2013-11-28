@@ -1,8 +1,10 @@
-package com.sinatramania.apitest;
+package com.sinatramania.apitest.steps;
 
 import static org.junit.Assert.assertEquals;
 
 import com.google.inject.Inject;
+import com.sinatramania.domain.Todo;
+import com.sinatramania.domain.TodoDao;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

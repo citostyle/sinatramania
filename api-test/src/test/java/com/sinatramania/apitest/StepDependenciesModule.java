@@ -2,6 +2,8 @@ package com.sinatramania.apitest;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.name.Names;
+import com.sinatramania.domain.TodoDao;
+import com.sinatramania.domain.TodoDaoRestProxy;
 
 public class StepDependenciesModule extends AbstractModule {
 

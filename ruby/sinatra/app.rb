@@ -6,19 +6,18 @@ require 'json'
 require 'sinatra/reloader'
 
 set :port, 3000
-enable :sessions
+
+todos = []
 
 namespace '/todos' do
 
   get '/?' do
-    json []
+    json todos
   end
 
   put '/?' do
-    json_request = request.body.read
-    todo = JSON.parse(json_request)
-    session[:todos] ||= []
-    session[:todos] << todo
+    todo = JSON.parse(request.body.read)
+    todos << todo
     status 201
   end
 

@@ -37,7 +37,16 @@ public class CreateNewTodoSteps {
 
    @When("^I create a new todo$")
    public void I_create_a_new_todo() {
-      throw new PendingException();
+      Todo todo = new Todo("buy milk");
+      createTodo(todo);
+   }
+
+   private void createTodo(Todo todo) {
+      ClientConfig config = new DefaultClientConfig();
+      config.getFeatures().put(JSONConfiguration.FEATURE_POJO_MAPPING, Boolean.TRUE);
+      Client client = Client.create(config);
+      WebResource service = client.resource(UriBuilder.fromUri("http://127.0.0.1:3000").build());
+      service.path("todos").type(MediaType.APPLICATION_JSON).put(todo);
    }
 
    @Then("^there should be exactly n plus one todos in the todo list$")

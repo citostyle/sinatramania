@@ -3,6 +3,6 @@
 Feature: Create a new todo
  
   Scenario: Add a new todo
-    Given an empty todo list
+    Given a todo list with n elements
     When I create a new todo
-    Then there should be exactly one todo in the todo list 
+    Then there should be exactly n plus one todos in the todo list 

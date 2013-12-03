@@ -14,5 +14,6 @@ Looking at the simple example on the homepage[1]...
 
 ... each handled request in the DSL  is a triple of < HTTP Verb, Resource/Path, Behaviour/Function > 
 
-[1] (http://www.sinatrarb.com/)[http://www.sinatrarb.com/)
-[2] [Frameworks inspired by Sinatra](http://en.wikipedia.org/wiki/Sinatra_\(software\)#Frameworks_inspired_by_Sinatra)
+\[1\] [sinatrarb.com](http://www.sinatrarb.com/)
+
+\[2\] [Frameworks inspired by Sinatra](http://en.wikipedia.org/wiki/Sinatra_\(software\)#Frameworks_inspired_by_Sinatra)
